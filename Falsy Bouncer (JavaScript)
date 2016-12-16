@@ -1,0 +1,13 @@
+
+Remove all falsy values from an array.
+------------------------------------------
+
+function bouncer(arr) {
+  function isValid(arg){
+    return Boolean(arg);
+  }
+  var filteredArray = arr.filter(isValid);
+  return filteredArray;
+}
+
+bouncer([7, "ate", "", false, 9]);
