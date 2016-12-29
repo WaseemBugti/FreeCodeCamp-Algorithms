@@ -1,0 +1,19 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num,rev;
+	cout << "Enter your number to reverse" << endl;
+	cin >> num;
+	do{
+		
+		rev =(num % 10);
+		cout << rev;
+		num = (num / 10);
+	} while (num !=0);
+	
+
+	system("PAUSE");
+	return 0;
+}
